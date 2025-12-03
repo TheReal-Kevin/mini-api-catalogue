@@ -1,0 +1,8 @@
+[
+  { "id": 1, "name": "Ordinateur portable", "price": 899.99, "categoryId": 1 },
+  { "id": 2, "name": "Clavier mécanique", "price": 79.9, "categoryId": 1 },
+  { "id": 3, "name": "Canapé 3 places", "price": 499.0, "categoryId": 2 },
+  { "id": 4, "name": "Ballon de football", "price": 29.99, "categoryId": 3 }
+]
+
+
