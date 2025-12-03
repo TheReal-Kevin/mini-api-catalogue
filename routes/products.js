@@ -30,10 +30,6 @@ router.post('/', (req, res) => {
     return res.status(400).json({ message: 'name, price et categoryId sont obligatoires' });
   }
 
-  if (Number(price) <= 0) {
-    return res.status(400).json({ message: 'Le prix doit être supérieur à 0' });
-  }
-
   const newProduct = {
     id: nextId++,
     name,
@@ -57,10 +53,6 @@ router.put('/:id', (req, res) => {
   const { name, price, categoryId } = req.body;
   if (!name || price == null || !categoryId) {
     return res.status(400).json({ message: 'name, price et categoryId sont obligatoires' });
-  }
-
-  if (Number(price) <= 0) {
-    return res.status(400).json({ message: 'Le prix doit être supérieur à 0' });
   }
 
   product.name = name;

@@ -14,7 +14,7 @@ app.use('/products', productsRoutes);
 
 // Endpoint racine pour tester rapidement
 app.get('/', (req, res) => {
-  res.send('Mini API Catalogue');
+  res.send('Mini API Catalogue en marche 🚀');
 });
 
 // Démarrage du serveur
